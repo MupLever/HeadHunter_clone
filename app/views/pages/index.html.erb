@@ -1,0 +1,31 @@
+
+<h1><%= t("pages.index.questions") %></h1>
+<% if signed_in? %>
+  <%= paginate @questions %>
+  <% @questions.each do |question| %>
+    <article class="card">
+        <div class="card-body bg-white">
+            <h3><%= link_to "#{strip_tags(question.title)}" , question_path(question), class: "btn text-green"%></h3>
+            <time datetime="<%= question.created_at.strftime('%H:%M %d.%m.%Y') %>">
+                <%= question.created_at.strftime('%H:%M %d.%m.%Y') %>
+            </time>
+            <h5 class="text-green text-end">
+                <%= question.answers.count %> 
+                <% if question.answers.count % 10 > 4 %>
+                <%= t("questions.index.answers") %>
+                <% else %>
+                <%= t("questions.index.answer") %>
+                <% end %>
+            </h5>
+            <% if signed_in? && current_user == question.user %>
+                <%= link_to t("pages.index.edit"), edit_question_path(question), class: "btn btn-primary" %>
+                <%= link_to t("pages.index.delete"), question_path(question), remote: true, data: {method: :delete, confirm: 'Are you sure you want to delete this page?'}, class: "btn btn-secondary" %>
+            <% end %>
+        </div>
+    </article>
+  <% end %>
+
+    <%= paginate @questions %>
+    <% else %>
+    <p><a href='http://localhost:3000/session/new' onmouseup="PaintHref(event, '#ffc107', '#0d6efd')" onmousedown="PaintHref(event, '#ffc107', '#0d6efd')"><%= t("pages.index.authorization") %></a></p>
+<% end %>

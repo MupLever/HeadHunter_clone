@@ -1,0 +1,15 @@
+@import 'bootstrap';
+header
+{
+  font-size: larger;
+}
+.btn-outline-success{
+  color: $green-200;
+  border-radius: 20px;
+  
+}
+.btn-outline-danger{
+  border-radius: 20px;
+}
+.btn{font-size: 100%;}
+.text-green{color: $green-400;}

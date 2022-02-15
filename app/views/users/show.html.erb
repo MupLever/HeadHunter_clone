@@ -1,0 +1,8 @@
+<article class="card">
+    <div class="card-header bg-white">
+        <h4><%= @user.name %></h4>
+    </div>
+    <div class="card-body bg-white">
+        <p><%= sanitize(@user.body) %></p>
+    </div>
+</article>

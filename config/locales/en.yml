@@ -1,0 +1,99 @@
+
+en:
+  layouts:
+    forum: "Hat Hunter"
+    home: "My vacancies"
+    questions: "All vacancies"
+    create_new: "Post a vacancy"
+    log_in: "Log in"
+    log_out: "Log out"
+    sign_up: "Create Resume"
+  pages:
+    index:
+      questions: "My vacancies"
+      date: "Date of creation:"
+      edit: "Edit"
+      delete: "Delete"
+      open: "Open"
+      author: "Author"
+      authorization: "Log in to see your vacancies."
+  answers:
+    edit: 
+      edit_answer: "Editing a review"
+      edit_your_answer: "Edit your a review"
+      save: "Save"
+  questions:
+    edit:
+      edit_question: "Edit a vacancy"
+      edit_save: "Save"
+      edit_title: "Title"
+      edit_text: "Содержание"
+    new:
+      new_question: "Create a vacancy"
+      create: "Create"
+      new_title: "Title"
+      new_text: "Содержание"
+    show:
+      date: "Date of creation:"
+      answer: "Review"
+      answers: "Reviews"
+      edit: "Edit"
+      delete: "Delete"
+      submit: "Submit"
+      write: "Reply to the author"
+      author: "Author"
+    index:
+      questions: "New vacancies"
+      edit: "Edit"
+      delete: "Delete"
+      open: "Open"
+      author: "Author"
+      answer: "Review"
+      answers: "Reviews"
+  sessions:
+    new:
+      auth: "Authorization"
+      log_in: "Log in"
+      email: "E-Mail"
+      password: "Password"
+  users:
+    new:
+      form_register: "Registration form"
+      register: "Register"
+      email: "E-Mail"
+      password: "Password"
+      name: "Name"
+      body: "About me"
+      confirm_password: "Password confirmation"
+    edit:
+      form_edit: "Edit profile"
+      save: "Save"
+      email: "E-Mail"
+      password: "Password"
+      name: "Name"
+      body: "About me"
+      confirm_password: "Password confirmation"
+  flash:
+    not_log_in: 'You are not signed in.'
+    already_log_in: 'You are already signed in.'
+    not_success_signed_in: 'You have not successfully signed in,'
+    success_signed_in: 'You have successfully signed in,'
+    success_updated: 'Your profile was successfully updated'
+    change_other_user: "You can not change other user"
+    not_success_logged_in: 'You have not successfully signed in,'
+    success_logged_in: 'You have successfully logged in,'
+    success_logged_out: 'You have successfully logged out.'
+    incorrectly_data: 'Data entered incorrectly'
+    not_author: 'You are not author'
+    delete_topic: 'Vacancy has been successfully deleted'
+    update_topic: 'The content of the vacancy has been changed'
+    create_topic: 'Vacancy posted'
+    delete_answer: 'Отзыв успешно удален'
+    update_answer: 'Review successfully updated'
+    create_answer: 'You have successfully left a review'
+  kaminari:
+   pagination:
+    first: 'First'
+    last: 'Last'
+    next: 'Next'
+    prev: 'Prev'

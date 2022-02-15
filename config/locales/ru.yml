@@ -1,0 +1,98 @@
+ru:
+  layouts:
+    forum: "Hat Hunter"
+    home: "Мои вакансии"
+    questions: "Все вакансии"
+    create_new: "Разместить вакансию"
+    log_in: "Войти"
+    log_out: "Выйти"
+    sign_up: "Создать резюме"
+  pages:
+    index:
+      questions: "Мои вакансии"
+      date: "Дата создания:"
+      edit: "Редактировать"
+      delete: "Удалить"
+      open: "Перейти"
+      author: "Автор"
+      authorization: "Авторизуйтесь, чтобы увидеть ваши вакансии."
+  answers:
+    edit: 
+      edit_answer: "Редактирование озыва"
+      edit_your_answer: "Редактируйте"
+      save: "Сохранить"
+  questions:
+    edit:
+      edit_question: "Редактировать вакансию"
+      edit_save: "Сохранить"
+      edit_title: "Название"
+      edit_text: "Содержание"
+    new:
+      new_question: "Создать вакансию"
+      create: "Создать"
+      new_title: "Название"
+      new_text: "Содержание"
+    show:
+      date: "Дата создания:"
+      answer: "Отзыв"
+      answers: "Отзывы"
+      edit: "Редактировать"
+      delete: "Удалить"
+      submit: "Отправить"
+      write: "Оставить отзыв"
+      author: "Автор"
+    index:
+      questions: "Новые вакансии"
+      edit: "Редактировать"
+      delete: "Удалить"
+      open: "Открыть в новом окне"
+      author: "Автор"
+      answer: "Отзыва"
+      answers: "Отзывов"
+  sessions:
+    new:
+      auth: "Авторизация"
+      log_in: "Войти"
+      email: "E-Mail"
+      password: "Пароль"
+  users:
+    new:
+      form_register: "Форма регистрации"
+      register: "Создать резюме"
+      email: "E-Mail"
+      password: "Пароль"
+      name: "Ваше Имя"
+      body: "О себе"
+      confirm_password: "Подтверждение пароля"
+    edit:
+      form_edit: "Редактирование профиля"
+      save: "Сохранить"
+      email: "E-Mail"
+      password: "Пароль"
+      name: "Ваше Имя"
+      body: "О себе"
+      confirm_password: "Подтверждение пароля"
+  kaminari:
+   pagination:
+    first: 'В начало'
+    last: 'В конец'
+    next: 'Далее'
+    prev: 'Назад'
+  flash:
+    not_log_in: 'Войдите в аккаунт или зарегистрируйтесь.'
+    already_log_in: 'Вы уже вошли в аккаунт.'
+    not_success_signed_in: 'Вы не смогли зарегистрироваться,'
+    success_signed_in: 'ВЫ успешно зарегистрировались,'
+    success_updated: 'Ваш профиль успешно обновлен'
+    change_other_user: 'Нельзя редактировать другого пользователя'
+    not_success_logged_in: 'ВЫ не смогли войти под в систему,'
+    success_logged_in: 'Вы успешно вошли в систему'
+    success_logged_out: 'Вы успешно разлогинелись.'
+    incorrectly_data: 'Некорректно введенные данные'
+    not_author: 'Вы не являетесь автором записи'
+    delete_topic: 'Вакансия успешно удалена'
+    update_topic: 'Содержание вакансии изменено'
+    create_topic: 'Вакансия размещена'
+    delete_answer: 'Отзыв успешно удален'
+    update_answer: 'Отзыв успешно обновлен'
+    create_answer: 'Вы успешно оставили отзыв'

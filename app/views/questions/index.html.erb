@@ -1,0 +1,23 @@
+<h1><%= t("questions.index.questions") %></h1>
+<%= paginate @questions %>
+<% @questions.each do |question| %>
+
+  <article class="card">
+  
+    <div class="card-body bg-white">
+      <h3><%= link_to "#{strip_tags(question.title)}" , question_path(question), class: "btn text-green"%></h3>
+        <time datetime="<%= question.created_at.strftime('%H:%M %d.%m.%Y') %>">
+          <%= question.created_at.strftime('%H:%M %d.%m.%Y') %>
+        </time>
+      <h5 class="text-green text-end">
+      <%= question.answers.count %> 
+      <% if question.answers.count % 10 > 4 %>
+        <%= t("questions.index.answers") %>
+      <% else %>
+        <%= t("questions.index.answer") %>
+      <% end %>
+      </h5>
+    </div>
+  </article>
+<% end %>
+<%= paginate @questions %>
